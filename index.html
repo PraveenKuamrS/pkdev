@@ -149,8 +149,9 @@
                         <span class="exp-company">Cygnusa Technologies · Chennai</span>
                     </div>
                     <div class="exp-content">
-                        <h3 class="exp-role">Mobile Application Developer L2 (MEVN)</h3>
-                        <p class="exp-project">Currently handling 3 projects, including HRMS, and developing backend microservices end-to-end from architecture to implementation.</p>
+                        <h3 class="exp-role">Software Developer L2 — Mobile & Backend</h3>
+                        <p class="exp-project">Specializing in Flutter mobile application development and scalable backend architecture, with hands-on experience designing and implementing complex modules such as subscription-based platforms, payment gateway integrations, real-time communication, and end-to-end backend services.
+                        </p>
                     </div>
                 </div>
 
@@ -330,10 +331,10 @@
 
             <div class="work-grid">
                 <!-- Project 1 -->
-                <div class="work-card" onclick="openProjectModal('hrms')">
+                <button type="button" class="work-card" onclick="openProjectModal('hrms')">
                     <div class="work-content">
                         <h3>HRMS Platform (Ongoing)</h3>
-                        <p class="work-role">Backend Developer · End-to-End Microservices Architecture</p>
+                        <p class="work-role">Backend Developer | End-to-End Microservices Architecture</p>
                         <p class="work-desc">End-to-end backend development for an HRMS platform using Node.js, Prisma, MySQL, FastAPI, Redis, AWS S3, SMTP, and SMS gateway integrations.</p>
                         <div class="work-tags">
                             <span>Node.js</span>
@@ -348,10 +349,10 @@
                     <div class="work-carousel">
                         <div class="work-preview-text">HRMS · Ongoing Project</div>
                     </div>
-                </div>
+                </button>
 
                 <!-- Project 2 -->
-                <div class="work-card" onclick="openProjectModal('promailnet')">
+                <button type="button" class="work-card" onclick="openProjectModal('promailnet')">
                     <div class="work-content">
                         <h3>Enterprise Collaboration Platform</h3>
                         <p class="work-role">Flutter Developer | AI & Real-time</p>
@@ -364,33 +365,14 @@
                         </div>
                         <span class="read-more">Click to read full details &rarr;</span>
                     </div>
-                    <div class="work-carousel" data-project="promailnet">
-                        <button class="carousel-btn prev" onclick="event.stopPropagation(); changeSlide('promailnet', -1)" aria-label="Previous image">
-                            <i data-lucide="chevron-left"></i>
-                        </button>
-                        <button class="carousel-btn next" onclick="event.stopPropagation(); changeSlide('promailnet', 1)" aria-label="Next image">
-                            <i data-lucide="chevron-right"></i>
-                        </button>
-                        <div class="carousel-dots"></div>
-                        <img src="assets/promailnet/Screenshot_2026-03-17-11-30-51-840_com.cygnusa.promailnet.jpg"
-                            class="carousel-img active" alt="Promailnet screenshot 1">
-                        <img src="assets/promailnet/Screenshot_2026-03-17-11-31-06-807_com.cygnusa.promailnet.jpg"
-                            class="carousel-img" alt="Promailnet screenshot 2">
-                        <img src="assets/promailnet/Screenshot_2026-03-17-11-46-56-155_com.cygnusa.promailnet.jpg"
-                            class="carousel-img" alt="Promailnet screenshot 3">
-                        <img src="assets/promailnet/Screenshot_2026-03-17-11-47-18-305_com.cygnusa.promailnet.jpg"
-                            class="carousel-img" alt="Promailnet screenshot 4">
-                        <img src="assets/promailnet/Screenshot_2026-03-17-11-47-21-873_com.cygnusa.promailnet.jpg"
-                            class="carousel-img" alt="Promailnet screenshot 5">
-                        <img src="assets/promailnet/Screenshot_2026-03-17-11-47-42-346_com.cygnusa.promailnet.jpg"
-                            class="carousel-img" alt="Promailnet screenshot 6">
-                        <img src="assets/promailnet/Screenshot_2026-03-17-14-58-50-865_com.cygnusa.promailnet.jpg"
-                            class="carousel-img" alt="Promailnet screenshot 7">
+                    <div class="work-carousel">
+                        <img src="assets/promailnet/fullimage.png"
+                            class="carousel-img active" alt="Promailnet Full Showcase">
                     </div>
-                </div>
+                </button>
 
                 <!-- Project 3 -->
-                <div class="work-card" onclick="openProjectModal('smarttrack')">
+                <button type="button" class="work-card" onclick="openProjectModal('smarttrack')">
                     <div class="work-content">
                         <h3>SmartTrack Application</h3>
                         <p class="work-role">Mobile App & Full Stack</p>
@@ -404,24 +386,14 @@
                         </div>
                         <span class="read-more">Click to read full details &rarr;</span>
                     </div>
-                    <div class="work-carousel" data-project="smarttrack">
-                        <button class="carousel-btn prev" onclick="event.stopPropagation(); changeSlide('smarttrack', -1)" aria-label="Previous image">
-                            <i data-lucide="chevron-left"></i>
-                        </button>
-                        <button class="carousel-btn next" onclick="event.stopPropagation(); changeSlide('smarttrack', 1)" aria-label="Next image">
-                            <i data-lucide="chevron-right"></i>
-                        </button>
-                        <div class="carousel-dots"></div>
-                        <img src="assets/smarttrack/smarttrack.png" class="carousel-img active"
-                            alt="Smarttrack screenshot">
-                        <img src="assets/smarttrack/smarttrack1.png" class="carousel-img" alt="Smarttrack screenshot 1">
-                        <img src="assets/smarttrack/smarttrack2.png" class="carousel-img" alt="Smarttrack screenshot 2">
-                        <img src="assets/smarttrack/smarttrack3.png" class="carousel-img" alt="Smarttrack screenshot 3">
+                    <div class="work-carousel">
+                        <img src="assets/smarttrack/smarttrack_showcase.jpg" class="carousel-img active"
+                            alt="SmartTrack Application Showcase">
                     </div>
-                </div>
+                </button>
 
                 <!-- Project 4 -->
-                <div class="work-card" onclick="openProjectModal('mediawall')">
+                <button type="button" class="work-card" onclick="openProjectModal('mediawall')">
                     <div class="work-content">
                         <h3>MediaWall Digital Signage</h3>
                         <p class="work-role">Full Stack & Mobile App</p>
@@ -435,13 +407,12 @@
                         <span class="read-more">Click to read full details &rarr;</span>
                     </div>
                     <div class="work-carousel">
-                        <iframe src="http://www.mediawall.in/" width="100%" height="100%"
-                            style="border: none; pointer-events: none;" title="MediaWall Live Website Preview"></iframe>
+                       <img src="assets/mediawall.png" class="carousel-img active" alt="Banking screenshot">
                     </div>
-                </div>
+                </button>
 
                 <!-- Project 5 -->
-                <div class="work-card" onclick="openProjectModal('banking')">
+                <button type="button" class="work-card" onclick="openProjectModal('banking')">
                     <div class="work-content">
                         <h3>P2P Banking Application</h3>
                         <p class="work-role">Mobile App Developer</p>
@@ -457,10 +428,10 @@
                     <div class="work-carousel">
                         <img src="assets/banking/image.png" class="carousel-img active" alt="Banking screenshot">
                     </div>
-                </div>
+                </button>
 
                 <!-- Project 6 -->
-                <div class="work-card" onclick="openProjectModal('survey')">
+                <button type="button" class="work-card" onclick="openProjectModal('survey')">
                     <div class="work-content">
                         <h3>Dynamic Survey Web App</h3>
                         <p class="work-role">Full Stack Developer</p>
@@ -476,7 +447,27 @@
                     <div class="work-carousel">
                         <img src="assets/survey/image.png" class="carousel-img active" alt="Survey screenshot">
                     </div>
-                </div>
+                </button>
+
+                <!-- Project 7 -->
+                <button type="button" class="work-card" onclick="openProjectModal('online-learning')">
+                    <div class="work-content">
+                        <h3>Online Learning & Course Platform</h3>
+                        <p class="work-role">Mobile App & Full Stack Developer</p>
+                        <p class="work-desc">A mobile-based learning platform allowing students to browse, purchase recorded video courses, single videos, or subscriptions securely via Razorpay.</p>
+                        <div class="work-tags">
+                            <span>Flutter</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Razorpay</span>
+                            <span>REST APIs</span>
+                        </div>
+                        <span class="read-more">Click to read full details &rarr;</span>
+                    </div>
+                    <div class="work-carousel">
+                        <img src="assets/onlinelearning.png" class="carousel-img active" alt="Online Learning & Subscriptions Showcase">
+                    </div>
+                </button>
             </div>
         </div>
     </section>
@@ -878,6 +869,7 @@
                 </ul>
             `,
             'promailnet': `
+                <img src="assets/promailnet/fullimage.png" alt="Enterprise Collaboration Platform Showcase" style="width: 100%; max-height: 350px; object-fit: contain; border-radius: 12px; margin-bottom: 1.5rem; background: rgba(0,0,0,0.03);">
                 <h4>Enterprise Collaboration & Communication Platform</h4>
                 <p>Led the end-to-end development of a scalable enterprise collaboration and communication platform, similar to Microsoft Teams, designed to support organizations with multiple teams, sub-groups, and structured communication workflows.</p>
                 <p>Started working on the product from its early development phase and played a key role in building and scaling the mobile application architecture to support real-world organizational communication needs.</p>
@@ -977,6 +969,24 @@
                     <li>Advanced reporting portal for administrators to visualize survey metrics instantly</li>
                     <li>Automated PDF and Excel (CSV) report generation for offline analysis and record keeping</li>
                 </ul>
+            `,
+            'online-learning': `
+                <h4>Online Learning & Course Subscription Platform</h4>
+                <p>A mobile-based online learning platform designed to allow students to access recorded courses, purchase individual video content or complete courses, and manage their subscriptions securely.</p>
+                <h5>Technologies Used:</h5>
+                <ul>
+                    <li><strong>Front-End:</strong> Flutter</li>
+                    <li><strong>Back-End:</strong> Node.js</li>
+                    <li><strong>Database:</strong> MongoDB</li>
+                    <li><strong>Payment Gateway:</strong> Razorpay & Webhooks</li>
+                    <li><strong>Authentication & APIs:</strong> REST APIs</li>
+                </ul>
+                <h5>Project Details:</h5>
+                <p>I developed the mobile application using Flutter, providing students with an intuitive platform to browse, purchase, and access online learning content. The application supports recorded video courses uploaded and managed by administrators, allowing students to access purchased content directly from their accounts.</p>
+                <p>The platform provides flexible purchasing options, enabling students to purchase individual videos, specific course levels, complete courses, or subscription-based access depending on the content offering.</p>
+                <p>The backend was developed using Node.js, with RESTful APIs responsible for user management, course and video management, content access control, subscriptions, and payment processing. MongoDB was used to efficiently manage application data, including users, courses, videos, purchases, and subscription information.</p>
+                <p>Razorpay was integrated as the payment gateway to provide secure online payment processing. I also implemented Razorpay webhooks to reliably handle payment status updates and ensure that successful transactions are accurately reflected in the user's course or subscription access.</p>
+                <p>The application was designed with scalability, secure content access, and a smooth learning experience in mind, providing students with a convenient way to access structured online educational content while giving administrators control over course and video management.</p>
             `
         };
 

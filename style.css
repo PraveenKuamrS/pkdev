@@ -1074,11 +1074,18 @@ section {
     align-items: center;
     gap: 2.5rem;
     overflow: hidden;
+    text-align: left;
+    width: 100%;
+    font-family: inherit;
+    color: inherit;
 }
 
-.work-card:hover {
+.work-card:hover,
+.work-card:focus-visible {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transform: translateY(-5px);
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
 }
 
 .work-content {
