@@ -33,8 +33,19 @@
     <link rel="stylesheet" href="style.css">
     <!-- Icons (Lucide) -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="color-scheme" content="light dark">
+    <!-- Early Theme Initializer to prevent dark mode flicker -->
+    <script>
+        (function() {
+            var saved = localStorage.getItem('theme');
+            var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (systemDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            document.documentElement.style.colorScheme = theme;
+        })();
+    </script>
     <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" integrity="sha384-SALc35EccAf6RzGw4iNsyj7kTPr33K7RoGzYu+7heZhT8s0GZouafRiCg1qy44AS" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -687,17 +698,17 @@
                         <form id="project-contact-form" class="detailed-form">
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label>Your Name</label>
+                                    <label for="contact-name">Your Name</label>
                                     <input type="text" id="contact-name" placeholder="John Smith" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>Email Address</label>
+                                    <label for="contact-email">Email Address</label>
                                     <input type="email" id="contact-email" placeholder="you@company.com" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label>What Kind of App Do You Need?</label>
+                                <label for="contact-type">What Kind of App Do You Need?</label>
                                 <select id="contact-type" required>
                                     <option value="" disabled selected>Choose app type...</option>
                                     <option value="Mobile App">Mobile App</option>
@@ -709,17 +720,17 @@
 
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label>Your Budget</label>
+                                    <label for="contact-budget">Your Budget</label>
                                     <input type="text" id="contact-budget" placeholder="Budget range..." required>
                                 </div>
                                 <div class="form-group">
-                                    <label>Timeline</label>
+                                    <label for="contact-timeline">Timeline</label>
                                     <input type="text" id="contact-timeline" placeholder="Desired timeline..." required>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label>Describe Your App</label>
+                                <label for="contact-details">Describe Your App</label>
                                 <textarea id="contact-details" rows="3" maxlength="500"
                                     placeholder="Briefly describe your project idea, key features, and target users..."
                                     required></textarea>

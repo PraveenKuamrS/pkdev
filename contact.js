@@ -43,16 +43,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById('themeToggle');
     const htmlElement = document.documentElement;
     
-    // Check for saved theme preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    // Check for saved theme preference or default to system OS preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currentTheme = savedTheme || (systemDark ? 'dark' : 'light');
+
     htmlElement.setAttribute('data-theme', currentTheme);
+    htmlElement.style.colorScheme = currentTheme;
 
     // Update icon based on current theme
     const updateThemeIcon = (theme) => {
-        const icon = themeToggle.querySelector('.theme-icon');
+        const icon = themeToggle ? themeToggle.querySelector('.theme-icon') : null;
         if (icon) {
             icon.setAttribute('data-lucide', theme === 'light' ? 'sun' : 'moon');
-            lucide.createIcons();
+            if (window.lucide) lucide.createIcons();
         }
     };
 
@@ -64,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const theme = htmlElement.getAttribute('data-theme');
             const newTheme = theme === 'light' ? 'dark' : 'light';
             htmlElement.setAttribute('data-theme', newTheme);
+            htmlElement.style.colorScheme = newTheme;
             localStorage.setItem('theme', newTheme);
             updateThemeIcon(newTheme);
         });

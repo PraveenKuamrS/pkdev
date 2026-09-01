@@ -1,0 +1,166 @@
+{
+  "hrms": {
+    "id": "hrms",
+    "title": "HRMS Platform (Ongoing)",
+    "role": "Backend Developer | End-to-End Microservices Architecture",
+    "desc": "End-to-end backend development for an HRMS platform using Node.js, Prisma, MySQL, FastAPI, Redis, AWS S3, SMTP, and SMS gateway integrations.",
+    "tags": ["Node.js", "FastAPI", "Redis", "Prisma", "MySQL", "AWS S3"],
+    "previewText": "HRMS · Ongoing Project",
+    "overview": "Developing the HRMS backend end-to-end, from architecture design to implementation, using a microservices-first approach.",
+    "coreStack": [
+      { "label": "Backend", "value": "Node.js + FastAPI services" },
+      { "label": "ORM", "value": "Prisma" },
+      { "label": "Database", "value": "MySQL" },
+      { "label": "Caching", "value": "Redis" },
+      { "label": "Storage", "value": "AWS S3 bucket integration" },
+      { "label": "Communication", "value": "SMTP + SMS gateway" }
+    ],
+    "currentFocus": [
+      "Microservice architecture from planning to production implementation",
+      "Reliable service-to-service communication and modular backend design",
+      "Scalable foundation for future WhatsApp-agent workflow integration"
+    ]
+  },
+  "promailnet": {
+    "id": "promailnet",
+    "title": "Enterprise Collaboration Platform",
+    "role": "Flutter Developer | AI & Real-time",
+    "desc": "A highly scalable communication platform resembling Microsoft Teams, supporting organizational hierarchies, calling, and messaging.",
+    "tags": ["Flutter", "WebRTC", "AI Integration"],
+    "image": "/assets/promailnet/fullimage.png",
+    "overviewParagraphs": [
+      "Led the end-to-end development of a scalable enterprise collaboration and communication platform, similar to Microsoft Teams, designed to support organizations with multiple teams, sub-groups, and structured communication workflows.",
+      "Started working on the product from its early development phase and played a key role in building and scaling the mobile application architecture to support real-world organizational communication needs.",
+      "Owned the complete Flutter mobile development lifecycle — from authentication architecture and core system design to real-time communication features and AI-powered enhancements.",
+      "The platform enables organizations to create multiple teams, manage hierarchical groups, and facilitate seamless collaboration through messaging, calling, and integrated productivity features."
+    ],
+    "keyFeatures": [
+      "Architected and developed the Flutter application with scalable and maintainable architecture",
+      "Implemented secure authentication and user management systems",
+      "Designed hierarchical organizational structure (Organization → Teams → Groups → Members)",
+      "Built real-time messaging features including: one-to-one and group chats, mentions and tagging, message forwarding, media and file sharing, contact integration",
+      "Integrated voice and video calling capabilities",
+      "Developed enterprise-style team communication channels",
+      "Implemented contact management and collaboration workflows",
+      "Integrated AI-driven features to enhance communication and user experience",
+      "Optimized application performance, scalability, and real-time synchronization for production usage"
+    ],
+    "impact": [
+      "Enabled scalable communication across complex organizational structures",
+      "Improved team collaboration through unified messaging, calling, and AI-assisted workflows",
+      "Delivered a production-ready, cross-platform enterprise application using Flutter"
+    ],
+    "playStoreUrl": "https://play.google.com/store/search?q=promailnet&c=apps"
+  },
+  "smarttrack": {
+    "id": "smarttrack",
+    "title": "SmartTrack Application",
+    "role": "Mobile App & Full Stack",
+    "desc": "A real-time school transport tracking system with dedicated apps for parents, drivers, and a Vue.js admin dashboard.",
+    "tags": ["Flutter", "Node.js", "MongoDB", "Vue.js"],
+    "image": "/assets/smarttrack/smarttrack_showcase.jpg",
+    "overview": "SmartTrack is a real-time school transport tracking system designed to ensure safe and transparent travel for students.",
+    "coreStack": [
+      { "label": "Front-End", "value": "Vue.js" },
+      { "label": "Back-End", "value": "Node.js" },
+      { "label": "Mobile App", "value": "Flutter" },
+      { "label": "Database", "value": "MongoDB" }
+    ],
+    "detailsParagraphs": [
+      "I developed the mobile applications using Flutter, creating dedicated interfaces for both drivers and parents, while the admin dashboard was built with Vue.js to manage and monitor transport activities efficiently.",
+      "The backend was developed in Node.js, featuring robust APIs and real-time event handling. Authentication was implemented using Firebase OTP via RCS and SMS fallback, ensuring secure and reliable access for all user types.",
+      "SmartTrack also includes a smart notification system — when a driver starts the school route, parents receive instant alerts, keeping them informed in real-time. Data such as trip start time, student pickups, and route progress are synced continuously across devices for complete visibility and peace of mind.",
+      "The system was designed with scalability, responsiveness, and user experience in mind, providing a reliable solution for school administrators and parents alike."
+    ]
+  },
+  "mediawall": {
+    "id": "mediawall",
+    "title": "MediaWall Digital Signage",
+    "role": "Full Stack & Mobile App",
+    "desc": "A cloud-based versatile digital signage platform to easily manage, schedule, and display dynamic content across remote screens.",
+    "tags": ["Vue.js", "Node.js", "Flutter"],
+    "image": "/assets/mediawall.png",
+    "overview": "Mediawall offers a versatile digital signage platform built to adapt and grow with your business. Recognizing that every organization is unique, we craft customized software solutions tailored to your specific needs.",
+    "coreStack": [
+      { "label": "Front-End", "value": "Vue.js" },
+      { "label": "Back-End", "value": "Node.js" },
+      { "label": "Mobile App", "value": "Flutter" },
+      { "label": "Database", "value": "MongoDB" },
+      { "label": "Project URL", "value": "www.mediawall.in" }
+    ],
+    "keyFeatures": [
+      "Support for images, videos, and social media platforms like YouTube, Instagram, and Twitter.",
+      "Content scheduling for automated publishing.",
+      "Real-time analytics and reporting for data-driven insights.",
+      "Integration with third-party systems for process automation.",
+      "Customizable templates and design tools to create engaging content.",
+      "Centralized control for managing multiple screens effortlessly."
+    ],
+    "roleDetails": [
+      "Led the integration of RESTful APIs between the Node.js backend and both frontends, ensuring smooth data synchronization and real-time updates. Focused on optimizing performance, improving application architecture, and delivering a polished UI/UX with consistent design principles across all platforms.",
+      "The upgraded version significantly enhanced responsiveness, maintainability, and user engagement, making MediaWall a more robust and user-centric solution."
+    ],
+    "projectUrl": "http://www.mediawall.in"
+  },
+  "banking": {
+    "id": "banking",
+    "title": "P2P Banking Application",
+    "role": "Mobile App Developer",
+    "desc": "An instant P2P fund transfer app featuring secure Plaid identity verification and fast Stripe payment processing.",
+    "tags": ["Flutter", "Stripe API", "Plaid API"],
+    "image": "/assets/banking/image.png",
+    "overviewParagraphs": [
+      "An instant P2P (peer-to-peer) fund transfer mobile application designed to simplify and secure digital payments.",
+      "I architected and developed the complete Flutter mobile application, directly integrating modern financial services APIs to achieve instantaneous transfers."
+    ],
+    "integrations": [
+      { "name": "Plaid Integration", "desc": "Seamlessly connected users' existing bank accounts for robust identity verification and secure ACH routing." },
+      { "name": "Stripe Integration", "desc": "Handled the secure payment processing core to facilitate near-instant money movement bridging the P2P gap." }
+    ],
+    "keyHighlights": [
+      "Engineered an intuitive mobile payment interface focused on transaction clarity and user trust.",
+      "Implemented stringent security measures and encryptions required for scalable fintech products."
+    ]
+  },
+  "survey": {
+    "id": "survey",
+    "title": "Dynamic Survey Web App",
+    "role": "Full Stack Developer",
+    "desc": "A customized survey application for the TN Elections featuring dynamic questionnaires and automated PDF/Excel reporting.",
+    "tags": ["React", "Node.js", "MySQL"],
+    "image": "/assets/survey/image.png",
+    "overviewParagraphs": [
+      "A dynamic web application custom-built during the 2026 TN elections for party members to conduct and manage field surveys efficiently.",
+      "This full-stack solution features a dynamic questionnaire engine allowing administrators to create highly customizable surveys on the fly."
+    ],
+    "keyFeatures": [
+      "Developed using React.js for a highly responsive field-user interface",
+      "Robust Node.js & MySQL backend to handle high-concurrency data collection securely",
+      "Advanced reporting portal for administrators to visualize survey metrics instantly",
+      "Automated PDF and Excel (CSV) report generation for offline analysis and record keeping"
+    ]
+  },
+  "online-learning": {
+    "id": "online-learning",
+    "title": "Online Learning & Course Platform",
+    "role": "Mobile App & Full Stack Developer",
+    "desc": "A mobile-based learning platform allowing students to browse, purchase recorded video courses, single videos, or subscriptions securely via Razorpay.",
+    "tags": ["Flutter", "Node.js", "MongoDB", "Razorpay", "REST APIs"],
+    "image": "/assets/onlinelearning.png",
+    "overview": "A mobile-based online learning platform designed to allow students to access recorded courses, purchase individual video content or complete courses, and manage their subscriptions securely.",
+    "coreStack": [
+      { "label": "Front-End", "value": "Flutter" },
+      { "label": "Back-End", "value": "Node.js" },
+      { "label": "Database", "value": "MongoDB" },
+      { "label": "Payment Gateway", "value": "Razorpay & Webhooks" },
+      { "label": "Authentication & APIs", "value": "REST APIs" }
+    ],
+    "detailsParagraphs": [
+      "I developed the mobile application using Flutter, providing students with an intuitive platform to browse, purchase, and access online learning content. The application supports recorded video courses uploaded and managed by administrators, allowing students to access purchased content directly from their accounts.",
+      "The platform provides flexible purchasing options, enabling students to purchase individual videos, specific course levels, complete courses, or subscription-based access depending on the content offering.",
+      "The backend was developed using Node.js, with RESTful APIs responsible for user management, course and video management, content access control, subscriptions, and payment processing. MongoDB was used to efficiently manage application data, including users, courses, videos, purchases, and subscription information.",
+      "Razorpay was integrated as the payment gateway to provide secure online payment processing. I also implemented Razorpay webhooks to reliably handle payment status updates and ensure that successful transactions are accurately reflected in the user's course or subscription access.",
+      "The application was designed with scalability, secure content access, and a smooth learning experience in mind, providing students with a convenient way to access structured online educational content while giving administrators control over course and video management."
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark">
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (systemDark ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <title>Praveen Kumar · Full Stack & Mobile App Developer</title>
+    <meta name="description" content="Experienced Flutter & Full Stack Developer specializing in cross-platform mobile apps, web applications, and scalable backend solutions. Expert in payment integrations, real-time systems, and modern tech stack.">
+    <meta name="keywords" content="Flutter Developer, Full Stack Developer, Mobile App Developer, MEVN Stack, React, Vue.js, Node.js, MongoDB, Payment Integration, Razorpay, Stripe, Web Development">
+    <meta name="author" content="Praveen Kumar Sakthivel">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Praveen Kumar · Full Stack & Mobile App Developer">
+    <meta property="og:description" content="Building scalable apps and solving real-world problems with Flutter, React, Vue.js, and Node.js">
+    <meta property="og:image" content="https://praveenkuamrs.github.io/praveen-portfolio/images/pknew.png">
+    <meta property="og:url" content="https://praveenkuamrs.github.io/praveen-portfolio/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Praveen Kumar · Full Stack & Mobile App Developer">
+    <meta name="twitter:description" content="Building scalable apps and solving real-world problems">
+    <meta name="twitter:image" content="https://praveenkuamrs.github.io/praveen-portfolio/images/pknew.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/pk_fav.png">
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
